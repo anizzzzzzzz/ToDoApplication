@@ -1,0 +1,17 @@
+.center{
+    text-align: center;
+}
+
+.fullbox{
+    height:100%;
+    background-color: aqua;
+}
+
+div.col div.center{
+    margin-top: 40px;
+}
+
+.categoryBox{
+    text-align: center;
+    padding: 40px;
+}
