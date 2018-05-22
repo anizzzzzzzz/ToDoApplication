@@ -1,4 +1,4 @@
-import {ADD_TASK, UPDATE_STATUS} from "../constant/constant";
+import {ADD_TASK, SELECT_TASK, UPDATE_STATUS} from "../constant/constant";
 
 export const addTask= (task)=>{
     return {
@@ -7,9 +7,16 @@ export const addTask= (task)=>{
     }
 };
 
-export const updateTask = (task)=>{
+export const updateStatus = (task)=>{
     return{
         type: UPDATE_STATUS,
+        payload:task
+    }
+};
+
+export const selectTask = (task)=>{
+    return{
+        type: SELECT_TASK,
         payload:task
     }
 };
