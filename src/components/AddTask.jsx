@@ -12,7 +12,7 @@ class AddTask extends Component {
         this.state={
             name:'',
             description:'',
-            deadline:null,
+            deadline:'',
             status:TODOCONST
         };
 
@@ -34,6 +34,7 @@ class AddTask extends Component {
             name:this.state.name,
             description:this.state.description,
             status:this.state.status,
+            movedDate:new Date().toString(),
             deadline:this.state.deadline
         };
 
